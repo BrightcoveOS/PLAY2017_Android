@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Define the new colors. -->
+    <color name="light_green">#ffc1d699</color>
+    <color name="blue_semi_trans">#730000ff</color>
+
+    <!-- This file will be found at ...res/values/colors.xml -->
+
+    <!-- Change the progress colors to magenta/black/blue, all transparent. -->
+    <!--<color name="bmc_seekbar_played">@color/light_green</color>
+    <color name="bmc_seekbar_buffered">@color/white_semi_trans</color>
+    <color name="bmc_seekbar_track">@color/lighter_gray</color>-->
+</resources>

@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    CREATING CUSTOM STYLES FOR PHONES, TABLETS and ANDROID TV
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    -->
+
+    <!-- Change size and color to all buttons -->
+    <!--<style name="BorderlessButton.TV.Custom">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/light_green</item>
+    </style>-->
+
+    <!-- Disable the Rewind button -->
+    <!--<style name="BrightcoveControlBar.TV.Custom">
+        <item name="brightcove_rewind">false</item>
+        <item name="brightcove_live">false</item>
+    </style>-->
+
+    <!-- The next THREE STYLES are used for the menu showing the AUDIO TRACKS and CAPTIONS on an Android TV -->
+    <!-- BrightcovePlayerOptions is used for general configuration for the layout containing the options -->
+    <!--<style name="BrightcovePlayerOptions" parent="BrightcovePlayerOptionsDefault">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    &lt;!&ndash; BrightcovePlayerOptionsTitle has general configuration for the menu titles (Audio & Captions) &ndash;&gt;
+    <style name="BrightcovePlayerOptionsTitle" parent="BrightcovePlayerOptionsTitleDefault">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    &lt;!&ndash; BrightcovePlayerOptionsButton is used for styling the radio button items.
+         You can override any value found on android:Widget.CompoundButton.RadioButton &ndash;&gt;
+    <style name="BrightcovePlayerOptionsButton" parent="BrightcovePlayerOptionsButtonDefault">
+        <item name="android:button">@drawable/custom_item_button</item>
+        <item name="android:textColor">@drawable/custom_player_option_item_text</item>
+    </style>-->
+
+
+</resources>
