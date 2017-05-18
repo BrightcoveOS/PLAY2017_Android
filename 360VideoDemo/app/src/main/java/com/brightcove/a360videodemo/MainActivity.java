@@ -28,7 +28,7 @@ public class MainActivity extends BrightcovePlayer {
         setContentView(R.layout.activity_main);
         brightcoveVideoView = (BrightcoveExoPlayerVideoView) findViewById(R.id.brightcove_video_view);
         Video video = Video.createVideo(
-                "asset:///sample360.mp4", DeliveryType.MP4, Video.ProjectionFormat.NORMAL);
+                "asset:///sample360.mp4", DeliveryType.MP4, Video.ProjectionFormat.EQUIRECTANGULAR);
         brightcoveVideoView.add(video);
 
         decorView = getWindow().getDecorView();
