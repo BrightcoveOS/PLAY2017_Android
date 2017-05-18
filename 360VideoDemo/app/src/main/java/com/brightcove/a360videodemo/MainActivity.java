@@ -6,9 +6,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 
-import com.brightcove.player.event.Event;
-import com.brightcove.player.event.EventListener;
-import com.brightcove.player.event.EventType;
 import com.brightcove.player.media.DeliveryType;
 import com.brightcove.player.model.Video;
 import com.brightcove.player.view.BrightcoveExoPlayerVideoView;
@@ -30,16 +27,8 @@ public class MainActivity extends BrightcovePlayer {
         // notifications and to control logging.
         setContentView(R.layout.activity_main);
         brightcoveVideoView = (BrightcoveExoPlayerVideoView) findViewById(R.id.brightcove_video_view);
-        brightcoveVideoView.getEventEmitter().on(EventType.CHANGE_ORIENTATION, new EventListener() {
-            @Override
-            public void processEvent(Event event) {
-                int orientation = event.getIntegerProperty(Event.REQUESTED_ORIENTATION);
-                setRequestedOrientation(orientation);
-            }
-        });
-
         Video video = Video.createVideo(
-                "asset:///sample360.mp4", DeliveryType.MP4, Video.ProjectionFormat.EQUIRECTANGULAR);
+                "asset:///sample360.mp4", DeliveryType.MP4, Video.ProjectionFormat.NORMAL);
         brightcoveVideoView.add(video);
 
         decorView = getWindow().getDecorView();
@@ -67,5 +56,4 @@ public class MainActivity extends BrightcovePlayer {
             handler.postDelayed(hideSystemUiTask, 500);
         }
     }
-
 }
